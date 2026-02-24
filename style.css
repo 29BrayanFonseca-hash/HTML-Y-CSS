@@ -79,7 +79,7 @@ legend {
     margin-bottom: 8px;
 }
 
-input [type="text"], input[type="email"], select {
+input[type="text"], input[type="email"], select {
     border-radius: 8px;
     width: 100%;
     padding: 12px;
@@ -96,5 +96,86 @@ input:focus, select:focus{
 }
 
 input:required:invalid {
-    
+    border-left: 5px solid var(--error-color);
+}
+
+input:required:valid {
+    border-left: 5px solid var(--success-color);
+}
+
+.helper-text {
+    margin-top: 6px;
+    font-size: 0.7rem;
+    color: var(--secundary-color)
+}
+
+.options-container {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-label, .checkbox-field label {
+    font-weight: 400;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 32px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+button {
+    flex: 1px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--bg-card);
+}
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--secundary-color);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--error-color);
+    color: var(--bg-card);
+    border: none;
+    transform: translateY(-3px);
+}
+.checkbox-field {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 15px
+}
+
+input[type="radio"]{
+    accent-color: var(--primary-color) ;
+}
+
+input [type="checkbox"]{
+    accent-color: var(--secundary-color);
 }
