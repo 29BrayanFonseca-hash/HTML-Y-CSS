@@ -55,3 +55,46 @@ section {
     padding: 20px;
     border-bottom: 1px solid #6e6e6e;
 }
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input [type="text"], input[type="email"], select {
+    border-radius: 8px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+input:focus, select:focus{
+    outline: none;
+    border-color: var(--border-color);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+input:required:invalid {
+    
+}
