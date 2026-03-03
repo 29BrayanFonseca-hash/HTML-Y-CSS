@@ -64,4 +64,28 @@ body {
 
 .card:hover .circle .logo {
     transform: scale(0);
+    transition-delay: 0s;
+}
+
+.card .product_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) rotate(315deg);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover .product_img{
+    transition-delay: 0.75%;
+    top: 25%;
+    left: 75%;
+    height: 530px;
+    transform: translate(-50%, -50%) scale(1) rotate(15deg);
+}
+
+.card .content {
+    position: absolute;
+    width: 50%;
+    left: 20%;
 }
