@@ -40,4 +40,6 @@ body {
     width: 350px;
     height: 350px;
     border-radius: 50%;
+    background: #191919;
+    border: 8px solid #005cbf;
 }
