@@ -126,3 +126,22 @@ body {
     font-weight: 500;
     margin-top: 10px;
 }
+
+.bubles-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.buble {
+    position: absolute;
+    bottom: -80px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%  rgba(255, 255, 255, 0.3), rgba(0, 120, 220,0.15 ));
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: floatUp;
+}
