@@ -106,3 +106,15 @@ body {
     font-size: 2.5rem;
     line-height: 1rem;
 }
+
+.card .content p {
+    color: #ffffff;
+}
+
+.card .content a {
+    position: relative;
+    color: #ffffff;
+    background: #d52b1d;
+    padding: 10px 20px;
+    border-radius: ;
+}
